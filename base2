@@ -1,0 +1,73 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: 03-Dez-2018 às 13:56
+-- Versão do servidor: 10.1.10-MariaDB
+-- PHP Version: 5.6.15
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `base2`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `imoveis`
+--
+
+CREATE TABLE `imoveis` (
+  `idimoveis` int(11) NOT NULL,
+  `Apartamento` varchar(45) NOT NULL,
+  `Casa` varchar(45) NOT NULL,
+  `comodos` varchar(45) NOT NULL,
+  `endereco` varchar(45) NOT NULL,
+  `tamanho` varchar(45) NOT NULL,
+  `garagem` varchar(45) NOT NULL,
+  `bairro` varchar(45) NOT NULL,
+  `Cidade` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `imoveis`
+--
+
+INSERT INTO `imoveis` (`idimoveis`, `Apartamento`, `Casa`, `comodos`, `endereco`, `tamanho`, `garagem`, `bairro`, `Cidade`) VALUES
+(1, 'não', 'sim', '4', 'Rua Celestial n°56', '40 metros quadrado', 'sim', 'iraja', 'Rio de Janeiro'),
+(2, 'não', 'sim', '6', 'Rua Alcantara candido n°97', '55 metros quadrado', 'sim', 'Inhuma', 'Rio de Janeiro'),
+(3, 'não', 'sim', '5', 'Rua alcineia n°122', '38 metros quadrado', 'não', 'Martechal hermes', 'Rio de Janeiro'),
+(4, 'sim', 'não', '5', 'Rua duque varão n°78', '30 mnetros quadrado', 'sim', 'Colegio', 'Rio de Janeiro'),
+(5, 'sim', 'não', '5', 'Rua joana mister n°902', '50 metros quadrado', 'sim', 'Leblon', 'Rio de Janeiro');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `imoveis`
+--
+ALTER TABLE `imoveis`
+  ADD PRIMARY KEY (`idimoveis`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `imoveis`
+--
+ALTER TABLE `imoveis`
+  MODIFY `idimoveis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
